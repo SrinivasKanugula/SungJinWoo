@@ -98,9 +98,9 @@ export default function Analysis() {
         ) : (
           <div className="space-y-8">
             {/* Weight Chart */}
-            <Card className="border-primary/30 bg-card/80 backdrop-blur">
+            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-primary">Weight Progress</CardTitle>
+                <CardTitle className="text-cyan-400">Weight Progress</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
