@@ -83,20 +83,43 @@ export default {
         "glow-pulse": {
           "0%, 100%": {
             opacity: "1",
+            textShadow: "0 0 20px rgb(0 255 255 / 0.5)",
+            boxShadow: "0 0 20px rgb(0 255 255 / 0.3), inset 0 0 20px rgb(0 255 255 / 0.1)",
           },
           "50%": {
-            opacity: "0.7",
+            opacity: "0.8",
+            textShadow: "0 0 40px rgb(0 255 255 / 0.8)",
+            boxShadow: "0 0 40px rgb(0 255 255 / 0.5), inset 0 0 30px rgb(0 255 255 / 0.15)",
+          },
+        },
+        "cyan-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 10px rgb(0 255 255 / 0.3), inset 0 0 10px rgb(0 255 255 / 0.05)",
+          },
+          "50%": {
+            boxShadow: "0 0 25px rgb(0 255 255 / 0.5), inset 0 0 15px rgb(0 255 255 / 0.1)",
+          },
+        },
+        "blue-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 10px rgb(0 150 255 / 0.3), inset 0 0 10px rgb(0 150 255 / 0.05)",
+          },
+          "50%": {
+            boxShadow: "0 0 25px rgb(0 150 255 / 0.5), inset 0 0 15px rgb(0 150 255 / 0.1)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "glow-pulse": "glow-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "glow-pulse": "glow-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "cyan-glow": "cyan-glow 3s ease-in-out infinite",
+        "blue-glow": "blue-glow 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-to-br-dark": "linear-gradient(135deg, #0f0a1a 0%, #1a0f2e 100%)",
-        "gradient-purple": "linear-gradient(135deg, #6d28d9 0%, #9333ea 100%)",
+        "gradient-to-br-dark": "linear-gradient(135deg, #0a1628 0%, #0f1f3f 100%)",
+        "gradient-cool": "linear-gradient(135deg, #00d4ff 0%, #0096ff 100%)",
+        "gradient-cyan": "linear-gradient(135deg, #00ffff 0%, #00a8ff 50%, #6366f1 100%)",
       },
     },
   },
