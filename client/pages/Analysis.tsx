@@ -55,27 +55,27 @@ export default function Analysis() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/20">
+    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800">
       {/* Header */}
-      <div className="border-b border-primary/20 bg-card/50 backdrop-blur sticky top-0 z-40">
+      <div className="border-b border-cyan-500/20 bg-black/30 backdrop-blur-lg glass-effect sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Button
               onClick={() => navigate("/")}
               variant="ghost"
               size="icon"
-              className="text-muted-foreground hover:text-foreground"
+              className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-500/20 transition-all"
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
             <div>
-              <h1 className="text-2xl font-bold text-accent">Progress Analytics</h1>
-              <p className="text-xs text-muted-foreground">
+              <h1 className="text-2xl font-bold glow-text-accent">Progress Analytics</h1>
+              <p className="text-xs text-cyan-300/60">
                 Track your transformation journey
               </p>
             </div>
           </div>
-          <BarChart3 className="w-6 h-6 text-accent" />
+          <BarChart3 className="w-6 h-6 text-cyan-400" />
         </div>
       </div>
 
