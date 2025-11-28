@@ -113,7 +113,7 @@ export default function Setup() {
             {step === 1 && (
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="water">Daily Water Goal (ml)</Label>
+                  <Label htmlFor="water" className="text-cyan-300">Daily Water Goal (ml)</Label>
                   <Input
                     id="water"
                     type="number"
@@ -124,7 +124,7 @@ export default function Setup() {
                         dailyWaterGoal: Number(e.target.value),
                       })
                     }
-                    className="bg-input text-foreground"
+                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                   />
                 </div>
 
