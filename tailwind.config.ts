@@ -80,10 +80,23 @@ export default {
             height: "0",
           },
         },
+        "glow-pulse": {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.7",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "glow-pulse": "glow-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      backgroundImage: {
+        "gradient-to-br-dark": "linear-gradient(135deg, #0f0a1a 0%, #1a0f2e 100%)",
+        "gradient-purple": "linear-gradient(135deg, #6d28d9 0%, #9333ea 100%)",
       },
     },
   },
