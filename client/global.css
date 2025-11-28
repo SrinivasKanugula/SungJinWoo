@@ -130,11 +130,12 @@
   }
 
   .glow-text-accent {
-    @apply text-cyan-400 drop-shadow-lg drop-shadow-cyan-500/40;
+    @apply text-cyan-400;
+    text-shadow: 0 0 20px rgb(0 255 255 / 0.4);
   }
 
   .glow-button {
-    @apply relative hover:shadow-lg hover:shadow-cyan-400/40 transition-all duration-300;
+    @apply relative hover:shadow-lg transition-all duration-300;
   }
 
   .glow-button::before {
