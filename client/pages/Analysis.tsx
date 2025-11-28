@@ -134,9 +134,9 @@ export default function Analysis() {
             </Card>
 
             {/* Pushups & Situps Chart */}
-            <Card className="border-primary/30 bg-card/80 backdrop-blur">
+            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-primary">Workout Progress</CardTitle>
+                <CardTitle className="text-cyan-400">Workout Progress</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -177,9 +177,9 @@ export default function Analysis() {
             </Card>
 
             {/* Nutrition Chart - Calories */}
-            <Card className="border-primary/30 bg-card/80 backdrop-blur">
+            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-primary">Daily Calorie Intake</CardTitle>
+                <CardTitle className="text-cyan-400">Daily Calorie Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -213,9 +213,9 @@ export default function Analysis() {
             </Card>
 
             {/* Protein Chart */}
-            <Card className="border-primary/30 bg-card/80 backdrop-blur">
+            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-primary">Daily Protein Intake</CardTitle>
+                <CardTitle className="text-cyan-400">Daily Protein Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -249,9 +249,9 @@ export default function Analysis() {
             </Card>
 
             {/* Water Intake Chart */}
-            <Card className="border-primary/30 bg-card/80 backdrop-blur">
+            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-primary">Daily Water Intake</CardTitle>
+                <CardTitle className="text-cyan-400">Daily Water Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
