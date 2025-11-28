@@ -82,14 +82,14 @@ export default function Analysis() {
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-8">
         {chartData.length === 0 ? (
-          <Card className="border-primary/30 bg-card/80">
+          <Card className="glass-effect border-cyan-500/40 bg-black/30">
             <CardContent className="pt-10 text-center py-12">
-              <p className="text-muted-foreground text-lg">
+              <p className="text-cyan-300/70 text-lg">
                 No data yet. Start logging your daily progress to see charts!
               </p>
               <Button
                 onClick={() => navigate("/")}
-                className="mt-4 bg-accent hover:bg-accent/90 text-accent-foreground"
+                className="mt-4 glow-button bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 font-semibold shadow-lg shadow-cyan-500/40"
               >
                 Start Logging
               </Button>
