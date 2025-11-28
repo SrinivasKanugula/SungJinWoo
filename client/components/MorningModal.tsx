@@ -45,7 +45,7 @@ export function MorningModal({
 
   return (
     <Dialog open={open}>
-      <DialogContent className="border-primary/30 bg-card/95 backdrop-blur max-w-lg">
+      <DialogContent className="glass-effect border-cyan-500/40 bg-black/40 backdrop-blur-xl max-w-lg">
         <DialogHeader>
           <DialogTitle className="text-center text-2xl"></DialogTitle>
         </DialogHeader>
@@ -53,30 +53,30 @@ export function MorningModal({
         <div className="space-y-8 py-6 text-center">
           {/* Quote */}
           <div className="space-y-4">
-            <p className="text-lg italic text-accent leading-relaxed">
+            <p className="text-lg italic glow-text-accent leading-relaxed">
               "{quote}"
             </p>
           </div>
 
           {/* Countdown */}
           <div className="space-y-2">
-            <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border-4 border-accent/30">
+            <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border-4 border-cyan-400/50 glow-accent animate-cyan-glow">
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent">
+                <div className="text-4xl font-bold text-cyan-400">
                   {countdownDay}
                 </div>
-                <div className="text-xs text-muted-foreground">
+                <div className="text-xs text-cyan-300/70">
                   / {totalDays}
                 </div>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground">Days of Transformation</p>
+            <p className="text-sm text-cyan-300/60">Days of Transformation</p>
           </div>
 
           {/* Start Button */}
           <Button
             onClick={onStart}
-            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-12 text-lg font-semibold rounded-lg"
+            className="glow-button w-full bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-12 text-lg font-semibold rounded-lg shadow-lg shadow-cyan-500/40 hover:shadow-cyan-400/60 transition-all duration-300"
           >
             Let's Start
           </Button>
