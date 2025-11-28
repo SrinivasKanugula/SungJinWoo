@@ -85,7 +85,7 @@ export default function Setup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/20 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4">
       <div className="w-full max-w-2xl">
         {/* Progress indicator */}
         <div className="mb-8 flex gap-2">
@@ -93,15 +93,15 @@ export default function Setup() {
             <div
               key={s}
               className={`h-2 flex-1 rounded-full transition-colors ${
-                s <= step ? "bg-accent" : "bg-muted"
+                s <= step ? "bg-gradient-to-r from-cyan-500 to-cyan-400" : "bg-slate-700/50"
               }`}
             />
           ))}
         </div>
 
-        <Card className="border-primary/30 bg-card/80 backdrop-blur">
+        <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
           <CardHeader>
-            <CardTitle className="text-2xl">
+            <CardTitle className="text-2xl glow-text-accent">
               {step === 1
                 ? "Fitness Transformation Setup"
                 : step === 2
