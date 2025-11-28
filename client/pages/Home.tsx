@@ -212,37 +212,37 @@ export default function Home() {
         {hasLoggedToday && currentStage === "morning" && (
           <div className="space-y-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="p-4 bg-card border border-primary/20 rounded-lg">
-                <p className="text-muted-foreground text-sm">Weight</p>
-                <p className="text-2xl font-bold text-accent">
+              <div className="p-4 glass-effect border-cyan-500/30 rounded-lg glow-accent hover:border-cyan-400/50 transition-all">
+                <p className="text-cyan-300/70 text-sm">Weight</p>
+                <p className="text-2xl font-bold text-cyan-400">
                   {todayData.weight}kg
                 </p>
               </div>
-              <div className="p-4 bg-card border border-primary/20 rounded-lg">
-                <p className="text-muted-foreground text-sm">Pushups</p>
-                <p className="text-2xl font-bold text-accent">
+              <div className="p-4 glass-effect border-cyan-500/30 rounded-lg glow-accent hover:border-cyan-400/50 transition-all">
+                <p className="text-cyan-300/70 text-sm">Pushups</p>
+                <p className="text-2xl font-bold text-cyan-400">
                   {todayData.pushups || 0}
                 </p>
               </div>
-              <div className="p-4 bg-card border border-primary/20 rounded-lg">
-                <p className="text-muted-foreground text-sm">Situps</p>
-                <p className="text-2xl font-bold text-accent">
+              <div className="p-4 glass-effect border-cyan-500/30 rounded-lg glow-accent hover:border-cyan-400/50 transition-all">
+                <p className="text-cyan-300/70 text-sm">Situps</p>
+                <p className="text-2xl font-bold text-cyan-400">
                   {todayData.situps || 0}
                 </p>
               </div>
-              <div className="p-4 bg-card border border-primary/20 rounded-lg">
-                <p className="text-muted-foreground text-sm">Water</p>
-                <p className="text-2xl font-bold text-accent">
+              <div className="p-4 glass-effect border-cyan-500/30 rounded-lg glow-accent hover:border-cyan-400/50 transition-all">
+                <p className="text-cyan-300/70 text-sm">Water</p>
+                <p className="text-2xl font-bold text-cyan-400">
                   {todayData.nutrition.water}ml
                 </p>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Continue Your Day</h3>
+              <h3 className="text-xl font-bold glow-text-accent">Continue Your Day</h3>
               <Button
                 onClick={() => setCurrentStage("nutrition")}
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-12"
+                className="glow-button w-full bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-12 font-semibold shadow-lg shadow-cyan-500/40"
               >
                 Log Nutrition
               </Button>
