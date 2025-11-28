@@ -129,7 +129,7 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="weight">Current Weight (kg)</Label>
+                  <Label htmlFor="weight" className="text-cyan-300">Current Weight (kg)</Label>
                   <Input
                     id="weight"
                     type="number"
@@ -141,12 +141,12 @@ export default function Setup() {
                         initialWeight: Number(e.target.value),
                       })
                     }
-                    className="bg-input text-foreground"
+                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="height">Height (cm)</Label>
+                  <Label htmlFor="height" className="text-cyan-300">Height (cm)</Label>
                   <Input
                     id="height"
                     type="number"
@@ -154,12 +154,12 @@ export default function Setup() {
                     onChange={(e) =>
                       setSetup({ ...setup, height: Number(e.target.value) })
                     }
-                    className="bg-input text-foreground"
+                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="countdown">Countdown Days</Label>
+                  <Label htmlFor="countdown" className="text-cyan-300">Countdown Days</Label>
                   <Input
                     id="countdown"
                     type="number"
@@ -170,13 +170,13 @@ export default function Setup() {
                         countdownDays: Number(e.target.value),
                       })
                     }
-                    className="bg-input text-foreground"
+                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                   />
                 </div>
 
                 <Button
                   onClick={handleBasicInfo}
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                  className="w-full glow-button bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 font-semibold shadow-lg shadow-cyan-500/40"
                 >
                   Next
                 </Button>
@@ -188,13 +188,13 @@ export default function Setup() {
                 <div className="text-sm text-muted-foreground mb-4">
                   Day {currentDayIndex + 1} of {days.length}
                 </div>
-                <h3 className="text-lg font-semibold text-primary">
+                <h3 className="text-lg font-semibold text-cyan-400">
                   {setup.workoutRoutine[currentDayIndex].day}
                 </h3>
 
                 <div className="space-y-3">
                   <div className="space-y-2">
-                    <Label htmlFor="exercise">Exercise Name</Label>
+                    <Label htmlFor="exercise" className="text-cyan-300">Exercise Name</Label>
                     <Input
                       id="exercise"
                       value={currentExercise.name}
@@ -205,13 +205,13 @@ export default function Setup() {
                         })
                       }
                       placeholder="e.g., Bench Press"
-                      className="bg-input text-foreground"
+                      className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                     />
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">
                     <div className="space-y-2">
-                      <Label htmlFor="sets">Sets</Label>
+                      <Label htmlFor="sets" className="text-cyan-300">Sets</Label>
                       <Input
                         id="sets"
                         type="number"
@@ -223,11 +223,11 @@ export default function Setup() {
                             sets: Number(e.target.value),
                           })
                         }
-                        className="bg-input text-foreground"
+                        className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="reps">Reps</Label>
+                      <Label htmlFor="reps" className="text-cyan-300">Reps</Label>
                       <Input
                         id="reps"
                         type="number"
@@ -239,7 +239,7 @@ export default function Setup() {
                             reps: Number(e.target.value),
                           })
                         }
-                        className="bg-input text-foreground"
+                        className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 focus:border-cyan-400/60 focus:ring-cyan-500/20"
                       />
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function Setup() {
                   <Button
                     onClick={handleAddExercise}
                     variant="outline"
-                    className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                    className="w-full border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/20 hover:text-cyan-200 hover:border-cyan-400/60 transition-all"
                   >
                     Add Exercise
                   </Button>
@@ -261,8 +261,8 @@ export default function Setup() {
                         className="p-3 bg-muted/50 rounded-lg flex justify-between items-center"
                       >
                         <div>
-                          <p className="font-medium">{exercise.name}</p>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="font-medium text-cyan-300">{exercise.name}</p>
+                          <p className="text-sm text-cyan-300/60">
                             {exercise.sets} sets × {exercise.reps} reps
                           </p>
                         </div>
@@ -282,13 +282,13 @@ export default function Setup() {
                     onClick={handlePreviousDay}
                     variant="outline"
                     disabled={currentDayIndex === 0}
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200 disabled:opacity-50"
                   >
                     Previous
                   </Button>
                   <Button
                     onClick={handleNextDay}
-                    className="flex-1 bg-accent hover:bg-accent/90 text-accent-foreground"
+                    className="flex-1 glow-button bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 font-semibold shadow-lg shadow-cyan-500/40"
                   >
                     {currentDayIndex === days.length - 1
                       ? "Review"
@@ -300,9 +300,9 @@ export default function Setup() {
 
             {step === 3 && (
               <div className="space-y-6">
-                <div className="space-y-3 p-4 bg-muted/50 rounded-lg">
-                  <h4 className="font-semibold text-accent">Summary</h4>
-                  <div className="text-sm space-y-1">
+                <div className="space-y-3 p-4 glass-effect border-cyan-500/30 rounded-lg glow-accent">
+                  <h4 className="font-semibold text-cyan-400">Summary</h4>
+                  <div className="text-sm space-y-1 text-cyan-300/70">
                     <p>Daily Water Goal: {setup.dailyWaterGoal} ml</p>
                     <p>Current Weight: {setup.initialWeight} kg</p>
                     <p>Height: {setup.height} cm</p>
@@ -311,11 +311,11 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-accent">Workout Days</h4>
+                  <h4 className="font-semibold text-cyan-400">Workout Days</h4>
                   {setup.workoutRoutine.map((day) => (
-                    <div key={day.day} className="p-3 bg-muted/50 rounded-lg">
-                      <p className="font-medium">{day.day}</p>
-                      <p className="text-sm text-muted-foreground">
+                    <div key={day.day} className="p-3 glass-effect border-blue-500/30 rounded-lg hover:border-cyan-400/50 transition-all">
+                      <p className="font-medium text-cyan-300">{day.day}</p>
+                      <p className="text-sm text-cyan-300/60">
                         {day.exercises.length} exercises
                       </p>
                     </div>
@@ -324,7 +324,7 @@ export default function Setup() {
 
                 <Button
                   onClick={handleComplete}
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground h-12 text-lg"
+                  className="glow-button w-full bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-12 text-lg font-semibold shadow-lg shadow-cyan-500/40"
                 >
                   Start Your Journey
                 </Button>
