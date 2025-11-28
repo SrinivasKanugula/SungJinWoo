@@ -104,20 +104,20 @@ export default function Home() {
   const workout = getWorkoutForToday();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/20">
+    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800">
       {/* Header */}
-      <div className="border-b border-primary/20 bg-card/50 backdrop-blur sticky top-0 z-40">
+      <div className="border-b border-cyan-500/20 bg-black/30 backdrop-blur-lg glass-effect sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-accent">FitPulse</h1>
-            <p className="text-xs text-muted-foreground">
+            <h1 className="text-2xl font-bold glow-text-accent">FitPulse</h1>
+            <p className="text-xs text-cyan-300/60">
               Day {todayData.countdownDay} / {user.setup.countdownDays}
             </p>
           </div>
           <Button
             onClick={() => navigate("/analysis")}
             variant="outline"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+            className="glow-button border-cyan-500/40 text-cyan-300 hover:bg-cyan-500/20 hover:text-cyan-200 hover:border-cyan-400/60 transition-all"
           >
             View Progress
           </Button>
