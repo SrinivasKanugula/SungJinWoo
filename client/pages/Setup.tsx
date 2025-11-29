@@ -85,8 +85,8 @@ export default function Setup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4 tech-grid">
-      <div className="w-full max-w-2xl">
+    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-3 sm:p-4 tech-grid">
+      <div className="w-full max-w-2xl px-0 sm:px-4">
         {/* Progress indicator */}
         <div className="mb-8 flex gap-2">
           {[1, 2, 3].map((s) => (
