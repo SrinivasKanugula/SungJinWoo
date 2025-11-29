@@ -155,13 +155,13 @@ export default function Settings() {
             <Button
               onClick={handleResetCancel}
               variant="outline"
-              className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200"
+              className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 h-10 sm:h-12 text-sm sm:text-base"
             >
               Cancel
             </Button>
             <Button
               onClick={handleResetConfirm}
-              className="flex-1 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-semibold shadow-lg shadow-red-500/40"
+              className="flex-1 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-semibold shadow-lg shadow-red-500/40 h-10 sm:h-12 text-sm sm:text-base"
             >
               Confirm
             </Button>
