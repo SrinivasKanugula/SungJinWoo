@@ -107,35 +107,36 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800">
       {/* Header */}
       <div className="border-b border-purple-500/20 glass-effect sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold glow-text-accent">FitPulse</h1>
+        <div className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
+          <div className="min-w-0">
+            <h1 className="text-xl sm:text-2xl font-bold glow-text-accent truncate">FitPulse</h1>
             <p className="text-xs text-purple-300/60">
               Day {todayData.countdownDay} / {user.setup.countdownDays}
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-1 sm:gap-2 flex-shrink-0">
             <Button
               onClick={() => navigate("/analysis")}
               variant="outline"
-              className="glow-button border-purple-500/40 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all"
+              className="glow-button border-purple-500/40 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all text-xs sm:text-sm px-2 sm:px-4 h-8 sm:h-10"
             >
-              View Progress
+              <span className="hidden sm:inline">View Progress</span>
+              <span className="sm:hidden">Progress</span>
             </Button>
             <Button
               onClick={() => navigate("/settings")}
               variant="outline"
               size="icon"
-              className="glow-button border-purple-500/40 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all"
+              className="glow-button border-purple-500/40 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all h-8 w-8 sm:h-10 sm:w-10"
             >
-              <SettingsIcon className="w-5 h-5" />
+              <SettingsIcon className="w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
         {/* Morning Modal */}
         <MorningModal
           open={currentStage === "morning" && !hasLoggedToday}
