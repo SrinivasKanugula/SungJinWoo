@@ -60,56 +60,56 @@ export function NutritionTracker({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {/* Calories Card */}
-        <div className="p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
-          <div className="flex items-center justify-between mb-4">
+        <div className="p-4 sm:p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
-              <Flame className="w-6 h-6 text-orange-400" />
-              <h3 className="font-semibold text-purple-300">Calories</h3>
+              <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Calories</h3>
             </div>
           </div>
-          <div className="text-3xl font-bold text-purple-300 mb-4">{calories}</div>
+          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">{calories}</div>
           <Button
             onClick={() => setOpenDialog("calories")}
             variant="outline"
-            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all"
+            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all h-9 sm:h-10 text-xs sm:text-sm"
           >
             Log Calories
           </Button>
         </div>
 
         {/* Protein Card */}
-        <div className="p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
-          <div className="flex items-center justify-between mb-4">
+        <div className="p-4 sm:p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
-              <Beef className="w-6 h-6 text-red-400" />
-              <h3 className="font-semibold text-purple-300">Protein</h3>
+              <Beef className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Protein</h3>
             </div>
           </div>
-          <div className="text-3xl font-bold text-purple-300 mb-4">{protein}g</div>
+          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">{protein}g</div>
           <Button
             onClick={() => setOpenDialog("protein")}
             variant="outline"
-            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all"
+            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all h-9 sm:h-10 text-xs sm:text-sm"
           >
             Log Protein
           </Button>
         </div>
 
         {/* Water Card */}
-        <div className="p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
-          <div className="flex items-center justify-between mb-4">
+        <div className="p-4 sm:p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
-              <Droplet className="w-6 h-6 text-purple-400" />
-              <h3 className="font-semibold text-purple-300">Water</h3>
+              <Droplet className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Water</h3>
             </div>
             <span className="text-xs text-purple-300/60">
               {Math.round(waterPercentage)}%
             </span>
           </div>
-          <div className="text-3xl font-bold text-purple-300 mb-4">
+          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">
             {water}ml
           </div>
-          <div className="w-full bg-purple-950/40 rounded-full h-2 mb-4 overflow-hidden border border-purple-500/20">
+          <div className="w-full bg-purple-950/40 rounded-full h-2 mb-3 sm:mb-4 overflow-hidden border border-purple-500/20">
             <div
               className="bg-gradient-to-r from-purple-500 to-magenta-500 h-full transition-all shadow-lg shadow-purple-500/50"
               style={{ width: `${waterPercentage}%` }}
@@ -118,7 +118,7 @@ export function NutritionTracker({
           <Button
             onClick={() => setOpenDialog("water")}
             variant="outline"
-            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all"
+            className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/60 transition-all h-9 sm:h-10 text-xs sm:text-sm"
           >
             Log Water
           </Button>
