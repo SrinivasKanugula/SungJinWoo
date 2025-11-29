@@ -58,29 +58,29 @@ export default function Analysis() {
     <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800">
       {/* Header */}
       <div className="border-b border-purple-500/20 bg-black/30 backdrop-blur-lg glass-effect sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <Button
               onClick={() => navigate("/")}
               variant="ghost"
               size="icon"
-              className="text-purple-300/70 hover:text-purple-300 hover:bg-purple-500/20 transition-all"
+              className="text-purple-300/70 hover:text-purple-300 hover:bg-purple-500/20 transition-all h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0"
             >
-              <ArrowLeft className="w-5 h-5" />
+              <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
-            <div>
-              <h1 className="text-2xl font-bold glow-text-accent">Progress Analytics</h1>
+            <div className="min-w-0">
+              <h1 className="text-lg sm:text-2xl font-bold glow-text-accent truncate">Progress Analytics</h1>
               <p className="text-xs text-purple-300/60">
-                Track your transformation journey
+                Track your journey
               </p>
             </div>
           </div>
-          <BarChart3 className="w-6 h-6 text-purple-300" />
+          <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-purple-300 flex-shrink-0" />
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 py-6 sm:py-8">
         {chartData.length === 0 ? (
           <Card className="glass-effect border-purple-500/40 bg-black/30">
             <CardContent className="pt-10 text-center py-12">
