@@ -89,7 +89,7 @@ export default function Analysis() {
               </p>
               <Button
                 onClick={() => navigate("/")}
-                className="mt-4 glow-button bg-gradient-to-r from-purple-500 to-purple-300 hover:from-purple-300 hover:to-purple-300 text-slate-950 font-semibold shadow-lg shadow-purple-500/40"
+                className="mt-4 glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40"
               >
                 Start Logging
               </Button>
