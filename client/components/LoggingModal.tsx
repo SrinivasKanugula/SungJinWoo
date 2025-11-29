@@ -45,9 +45,9 @@ export function LoggingModal({
 
   return (
     <Dialog open={open}>
-      <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-md">
+      <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-md w-full mx-4">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl text-purple-300">
+          <DialogTitle className="text-center text-lg sm:text-2xl text-purple-300">
             {stage === "weight" && "Log Your Weight"}
             {stage === "exercises" && "Log Your Exercises"}
           </DialogTitle>
