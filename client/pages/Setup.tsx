@@ -99,9 +99,9 @@ export default function Setup() {
           ))}
         </div>
 
-        <Card className="glass-effect glow-primary border-purple-500/40 bg-black/30 backdrop-blur-xl">
+        <Card className="glass-effect glow-primary border-purple-500/40 bg-black/30 backdrop-blur-xl mx-3 sm:mx-0">
           <CardHeader>
-            <CardTitle className="text-2xl glow-text-accent">
+            <CardTitle className="text-xl sm:text-2xl glow-text-accent">
               {step === 1
                 ? "Fitness Transformation Setup"
                 : step === 2
