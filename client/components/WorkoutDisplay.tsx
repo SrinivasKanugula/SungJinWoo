@@ -37,33 +37,33 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
   const allCompleted = completedExercises.size === workout.exercises.length;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <div>
-        <h2 className="text-3xl font-bold glow-text-accent mb-2">
+        <h2 className="text-2xl sm:text-3xl font-bold glow-text-accent mb-2">
           {workout.day}'s Workout
         </h2>
-        <p className="text-purple-300/70">
+        <p className="text-sm sm:text-base text-purple-300/70">
           {workout.exercises.length} exercises to complete
         </p>
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3">
         {workout.exercises.map((exercise) => {
           const isCompleted = completedExercises.has(exercise.id);
 
           return (
             <div
               key={exercise.id}
-              className={`p-4 rounded-lg border-2 transition-all glass-effect ${
+              className={`p-3 sm:p-4 rounded-lg border-2 transition-all glass-effect ${
                 isCompleted
                   ? "border-purple-400/50 glow-primary bg-purple-500/10"
                   : "border-purple-500/30 hover:border-purple-400/50 hover:glow-primary"
               }`}
             >
-              <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg text-purple-300">{exercise.name}</h3>
-                  <p className="text-sm text-purple-300/60">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-base sm:text-lg text-purple-300 break-words">{exercise.name}</h3>
+                  <p className="text-xs sm:text-sm text-purple-300/60">
                     {exercise.sets} sets × {exercise.reps} reps
                   </p>
                 </div>
@@ -71,7 +71,7 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
                 <Button
                   onClick={() => handleExerciseComplete(exercise.id)}
                   disabled={isCompleted}
-                  className={`ml-4 ${
+                  className={`w-full sm:w-auto ml-0 sm:ml-4 h-10 text-sm ${
                     isCompleted
                       ? "bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white shadow-lg shadow-purple-500/40"
                       : "bg-gradient-to-r from-magenta-600 to-purple-500 hover:from-magenta-500 hover:to-purple-400 text-white shadow-lg shadow-magenta-500/40"
@@ -79,7 +79,7 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
                 >
                   {isCompleted ? (
                     <>
-                      <Check className="w-5 h-5 mr-2" />
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" />
                       Done
                     </>
                   ) : (
