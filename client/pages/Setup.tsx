@@ -282,13 +282,13 @@ export default function Setup() {
                     onClick={handlePreviousDay}
                     variant="outline"
                     disabled={currentDayIndex === 0}
-                    className="border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200 disabled:opacity-50"
+                    className="border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200 disabled:opacity-50 h-10 sm:h-12 text-sm sm:text-base"
                   >
                     Previous
                   </Button>
                   <Button
                     onClick={handleNextDay}
-                    className="flex-1 glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40"
+                    className="flex-1 glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40 h-10 sm:h-12 text-sm sm:text-base"
                   >
                     {currentDayIndex === days.length - 1
                       ? "Review"
