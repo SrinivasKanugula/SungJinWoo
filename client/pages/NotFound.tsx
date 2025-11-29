@@ -27,7 +27,7 @@ const NotFound = () => {
         </div>
         <Button
           onClick={() => navigate("/")}
-          className="glow-button bg-gradient-to-r from-purple-500 to-purple-300 hover:from-purple-300 hover:to-purple-300 text-slate-950 px-8 h-12 text-lg font-semibold shadow-lg shadow-purple-500/40"
+          className="glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white px-8 h-12 text-lg font-semibold shadow-lg shadow-purple-500/40"
         >
           <Home className="w-5 h-5 mr-2" />
           Return to Home
