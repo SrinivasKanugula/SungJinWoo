@@ -45,9 +45,9 @@ export function LoggingModal({
 
   return (
     <Dialog open={open}>
-      <DialogContent className="glass-effect border-cyan-500/40 bg-black/40 backdrop-blur-xl max-w-md">
+      <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl text-cyan-400">
+          <DialogTitle className="text-center text-2xl text-purple-300">
             {stage === "weight" && "Log Your Weight"}
             {stage === "exercises" && "Log Your Exercises"}
           </DialogTitle>
@@ -57,7 +57,7 @@ export function LoggingModal({
           {stage === "weight" && (
             <>
               <div className="space-y-2">
-                <Label htmlFor="weight-input" className="text-base text-cyan-300">
+                <Label htmlFor="weight-input" className="text-base text-purple-300">
                   Weight (kg)
                 </Label>
                 <Input
@@ -68,7 +68,7 @@ export function LoggingModal({
                   value={weight}
                   onChange={(e) => setWeight(e.target.value)}
                   autoFocus
-                  className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 text-base h-12 focus:border-cyan-400/60 focus:ring-cyan-500/20"
+                  className="bg-purple-950/40 border-purple-500/30 text-purple-300 placeholder-purple-600/50 text-base h-12 focus:border-purple-400/60 focus:ring-purple-500/20"
                 />
               </div>
 
@@ -77,7 +77,7 @@ export function LoggingModal({
                   <Button
                     onClick={onSkip}
                     variant="outline"
-                    className="flex-1 border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200"
+                    className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200"
                   >
                     Skip
                   </Button>
@@ -85,7 +85,7 @@ export function LoggingModal({
                 <Button
                   onClick={handleWeightSubmit}
                   disabled={!weight}
-                  className="flex-1 bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-10 font-semibold shadow-lg shadow-cyan-500/40"
+                  className="flex-1 bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 font-semibold shadow-lg shadow-purple-500/40"
                 >
                   Continue
                 </Button>
@@ -97,7 +97,7 @@ export function LoggingModal({
             <>
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="pushups-input" className="text-base text-cyan-300">
+                  <Label htmlFor="pushups-input" className="text-base text-purple-300">
                     Pushups
                   </Label>
                   <Input
@@ -107,12 +107,12 @@ export function LoggingModal({
                     value={pushups}
                     onChange={(e) => setPushups(e.target.value)}
                     autoFocus
-                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 text-base h-12 focus:border-cyan-400/60 focus:ring-cyan-500/20"
+                    className="bg-purple-950/40 border-purple-500/30 text-purple-300 placeholder-purple-600/50 text-base h-12 focus:border-purple-400/60 focus:ring-purple-500/20"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="situps-input" className="text-base text-cyan-300">
+                  <Label htmlFor="situps-input" className="text-base text-purple-300">
                     Situps
                   </Label>
                   <Input
@@ -121,7 +121,7 @@ export function LoggingModal({
                     placeholder="Number of situps"
                     value={situps}
                     onChange={(e) => setSitups(e.target.value)}
-                    className="bg-slate-950/40 border-cyan-500/30 text-cyan-300 placeholder-cyan-600/50 text-base h-12 focus:border-cyan-400/60 focus:ring-cyan-500/20"
+                    className="bg-purple-950/40 border-purple-500/30 text-purple-300 placeholder-purple-600/50 text-base h-12 focus:border-purple-400/60 focus:ring-purple-500/20"
                   />
                 </div>
               </div>
@@ -131,7 +131,7 @@ export function LoggingModal({
                   <Button
                     onClick={onSkip}
                     variant="outline"
-                    className="flex-1 border-blue-500/30 text-blue-300 hover:bg-blue-500/20 hover:text-blue-200"
+                    className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200"
                   >
                     Skip
                   </Button>
@@ -139,7 +139,7 @@ export function LoggingModal({
                 <Button
                   onClick={handleExercisesSubmit}
                   disabled={!pushups || !situps}
-                  className="flex-1 bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-10 font-semibold shadow-lg shadow-cyan-500/40"
+                  className="flex-1 bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 font-semibold shadow-lg shadow-purple-500/40"
                 >
                   Continue
                 </Button>
