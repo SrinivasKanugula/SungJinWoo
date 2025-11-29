@@ -38,17 +38,17 @@ export default function Home() {
 
   if (!user.setup.setupComplete) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4 tech-grid">
         <div className="text-center space-y-6">
-          <Activity className="w-16 h-16 text-cyan-400 mx-auto animate-cyan-glow" />
+          <Activity className="w-16 h-16 text-purple-400 mx-auto animate-purple-glow" />
           <h1 className="text-4xl font-bold glow-text-accent">Welcome to FitPulse</h1>
-          <p className="text-cyan-300/70 max-w-md">
+          <p className="text-purple-300/70 max-w-md">
             Your Solo Levelling-inspired fitness transformation journey starts
             here
           </p>
           <Button
             onClick={() => navigate("/setup")}
-            className="glow-button bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 px-8 h-12 text-lg font-semibold shadow-lg shadow-cyan-500/40"
+            className="glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white px-8 h-12 text-lg font-semibold shadow-lg shadow-purple-500/40"
           >
             Start Your Transformation
           </Button>
