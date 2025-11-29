@@ -324,7 +324,7 @@ export default function Setup() {
 
                 <Button
                   onClick={handleComplete}
-                  className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-12 text-lg font-semibold shadow-lg shadow-purple-500/40"
+                  className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 sm:h-12 text-base sm:text-lg font-semibold shadow-lg shadow-purple-500/40"
                 >
                   Start Your Journey
                 </Button>
