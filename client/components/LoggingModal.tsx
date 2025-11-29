@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 interface LoggingModalProps {
   open: boolean;
@@ -57,7 +52,10 @@ export function LoggingModal({
           {stage === "weight" && (
             <>
               <div className="space-y-2">
-                <Label htmlFor="weight-input" className="text-base text-purple-300">
+                <Label
+                  htmlFor="weight-input"
+                  className="text-base text-purple-300"
+                >
                   Weight (kg)
                 </Label>
                 <Input
@@ -97,7 +95,10 @@ export function LoggingModal({
             <>
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="pushups-input" className="text-base text-purple-300">
+                  <Label
+                    htmlFor="pushups-input"
+                    className="text-base text-purple-300"
+                  >
                     Pushups
                   </Label>
                   <Input
@@ -112,7 +113,10 @@ export function LoggingModal({
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="situps-input" className="text-base text-purple-300">
+                  <Label
+                    htmlFor="situps-input"
+                    className="text-base text-purple-300"
+                  >
                     Situps
                   </Label>
                   <Input

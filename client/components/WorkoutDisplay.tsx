@@ -8,9 +8,12 @@ interface WorkoutDisplayProps {
   onWorkoutComplete: () => void;
 }
 
-export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayProps) {
+export function WorkoutDisplay({
+  workout,
+  onWorkoutComplete,
+}: WorkoutDisplayProps) {
   const [completedExercises, setCompletedExercises] = useState<Set<string>>(
-    new Set()
+    new Set(),
   );
 
   if (!workout) {
@@ -62,7 +65,9 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-base sm:text-lg text-purple-300 break-words">{exercise.name}</h3>
+                  <h3 className="font-semibold text-base sm:text-lg text-purple-300 break-words">
+                    {exercise.name}
+                  </h3>
                   <p className="text-xs sm:text-sm text-purple-300/60">
                     {exercise.sets} sets × {exercise.reps} reps
                   </p>

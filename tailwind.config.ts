@@ -84,28 +84,34 @@ export default {
           "0%, 100%": {
             opacity: "1",
             textShadow: "0 0 20px rgb(167 139 250 / 0.5)",
-            boxShadow: "0 0 20px rgb(167 139 250 / 0.3), inset 0 0 20px rgb(167 139 250 / 0.1)",
+            boxShadow:
+              "0 0 20px rgb(167 139 250 / 0.3), inset 0 0 20px rgb(167 139 250 / 0.1)",
           },
           "50%": {
             opacity: "0.9",
             textShadow: "0 0 40px rgb(196 181 253 / 0.8)",
-            boxShadow: "0 0 40px rgb(167 139 250 / 0.5), inset 0 0 30px rgb(196 181 253 / 0.15)",
+            boxShadow:
+              "0 0 40px rgb(167 139 250 / 0.5), inset 0 0 30px rgb(196 181 253 / 0.15)",
           },
         },
         "purple-glow": {
           "0%, 100%": {
-            boxShadow: "0 0 10px rgb(167 139 250 / 0.3), inset 0 0 10px rgb(167 139 250 / 0.05)",
+            boxShadow:
+              "0 0 10px rgb(167 139 250 / 0.3), inset 0 0 10px rgb(167 139 250 / 0.05)",
           },
           "50%": {
-            boxShadow: "0 0 25px rgb(167 139 250 / 0.5), inset 0 0 15px rgb(167 139 250 / 0.1)",
+            boxShadow:
+              "0 0 25px rgb(167 139 250 / 0.5), inset 0 0 15px rgb(167 139 250 / 0.1)",
           },
         },
         "magenta-glow": {
           "0%, 100%": {
-            boxShadow: "0 0 10px rgb(217 70 239 / 0.3), inset 0 0 10px rgb(217 70 239 / 0.05)",
+            boxShadow:
+              "0 0 10px rgb(217 70 239 / 0.3), inset 0 0 10px rgb(217 70 239 / 0.05)",
           },
           "50%": {
-            boxShadow: "0 0 25px rgb(217 70 239 / 0.5), inset 0 0 15px rgb(217 70 239 / 0.1)",
+            boxShadow:
+              "0 0 25px rgb(217 70 239 / 0.5), inset 0 0 15px rgb(217 70 239 / 0.1)",
           },
         },
       },
@@ -117,10 +123,13 @@ export default {
         "magenta-glow": "magenta-glow 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-to-br-dark": "linear-gradient(135deg, #1a0f3f 0%, #2d1a5c 100%)",
+        "gradient-to-br-dark":
+          "linear-gradient(135deg, #1a0f3f 0%, #2d1a5c 100%)",
         "gradient-purple": "linear-gradient(135deg, #a78bfa 0%, #c084fc 100%)",
-        "gradient-tech": "linear-gradient(135deg, #9333ea 0%, #d946ef 50%, #a78bfa 100%)",
-        "gradient-vibrant": "linear-gradient(135deg, #7e22ce 0%, #9333ea 50%, #d946ef 100%)",
+        "gradient-tech":
+          "linear-gradient(135deg, #9333ea 0%, #d946ef 50%, #a78bfa 100%)",
+        "gradient-vibrant":
+          "linear-gradient(135deg, #7e22ce 0%, #9333ea 50%, #d946ef 100%)",
       },
     },
   },

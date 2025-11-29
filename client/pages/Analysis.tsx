@@ -69,10 +69,10 @@ export default function Analysis() {
               <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </Button>
             <div className="min-w-0">
-              <h1 className="text-lg sm:text-2xl font-bold glow-text-accent truncate">Progress Analytics</h1>
-              <p className="text-xs text-purple-300/60">
-                Track your journey
-              </p>
+              <h1 className="text-lg sm:text-2xl font-bold glow-text-accent truncate">
+                Progress Analytics
+              </h1>
+              <p className="text-xs text-purple-300/60">Track your journey</p>
             </div>
           </div>
           <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-purple-300 flex-shrink-0" />
@@ -100,12 +100,17 @@ export default function Analysis() {
             {/* Weight Chart */}
             <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-purple-300">Weight Progress</CardTitle>
+                <CardTitle className="text-purple-300">
+                  Weight Progress
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--border))"
+                    />
                     <XAxis
                       dataKey="date"
                       formatter={formatDate}
@@ -136,12 +141,17 @@ export default function Analysis() {
             {/* Pushups & Situps Chart */}
             <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-purple-300">Workout Progress</CardTitle>
+                <CardTitle className="text-purple-300">
+                  Workout Progress
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--border))"
+                    />
                     <XAxis
                       dataKey="date"
                       formatter={formatDate}
@@ -179,12 +189,17 @@ export default function Analysis() {
             {/* Nutrition Chart - Calories */}
             <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-purple-300">Daily Calorie Intake</CardTitle>
+                <CardTitle className="text-purple-300">
+                  Daily Calorie Intake
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--border))"
+                    />
                     <XAxis
                       dataKey="date"
                       formatter={formatDate}
@@ -215,12 +230,17 @@ export default function Analysis() {
             {/* Protein Chart */}
             <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-purple-300">Daily Protein Intake</CardTitle>
+                <CardTitle className="text-purple-300">
+                  Daily Protein Intake
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--border))"
+                    />
                     <XAxis
                       dataKey="date"
                       formatter={formatDate}
@@ -251,12 +271,17 @@ export default function Analysis() {
             {/* Water Intake Chart */}
             <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-purple-300">Daily Water Intake</CardTitle>
+                <CardTitle className="text-purple-300">
+                  Daily Water Intake
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={chartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="hsl(var(--border))"
+                    />
                     <XAxis
                       dataKey="date"
                       formatter={formatDate}

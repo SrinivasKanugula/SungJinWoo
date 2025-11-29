@@ -55,7 +55,9 @@ export default function Settings() {
             <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
           </Button>
           <div className="min-w-0">
-            <h1 className="text-lg sm:text-2xl font-bold glow-text-accent truncate">Settings</h1>
+            <h1 className="text-lg sm:text-2xl font-bold glow-text-accent truncate">
+              Settings
+            </h1>
             <p className="text-xs text-purple-300/60">Manage your account</p>
           </div>
         </div>
@@ -66,7 +68,9 @@ export default function Settings() {
         <div className="space-y-6">
           {/* Account Info */}
           <div className="glass-effect glow-primary rounded-lg p-6 space-y-4">
-            <h2 className="text-xl font-bold glow-text-accent">Account Information</h2>
+            <h2 className="text-xl font-bold glow-text-accent">
+              Account Information
+            </h2>
             <div className="space-y-3 text-purple-300/80">
               <div className="flex justify-between items-center py-2 border-b border-purple-500/10">
                 <span>Current Weight</span>
@@ -102,14 +106,17 @@ export default function Settings() {
               <h2 className="text-xl font-bold text-red-300">Danger Zone</h2>
             </div>
             <p className="text-purple-300/70 text-sm">
-              This action is irreversible. All your data including historical records will be permanently deleted.
+              This action is irreversible. All your data including historical
+              records will be permanently deleted.
             </p>
             <Button
               onClick={handleResetClick}
               className="glow-button w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white h-10 sm:h-12 font-semibold shadow-lg shadow-red-500/40 transition-all text-sm sm:text-base"
             >
               <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              <span className="hidden sm:inline">Reset Everything & Start Over</span>
+              <span className="hidden sm:inline">
+                Reset Everything & Start Over
+              </span>
               <span className="sm:hidden">Reset Everything</span>
             </Button>
           </div>
@@ -125,9 +132,12 @@ export default function Settings() {
               Confirm Reset
             </DialogTitle>
             <DialogDescription className="text-purple-300/70">
-              {resetStage === 1 && "Are you sure you want to reset everything? This will delete all your data."}
-              {resetStage === 2 && "Are you really sure? All historical records will be lost forever."}
-              {resetStage === 3 && "Final confirmation: This action cannot be undone. Click confirm one more time to proceed."}
+              {resetStage === 1 &&
+                "Are you sure you want to reset everything? This will delete all your data."}
+              {resetStage === 2 &&
+                "Are you really sure? All historical records will be lost forever."}
+              {resetStage === 3 &&
+                "Final confirmation: This action cannot be undone. Click confirm one more time to proceed."}
             </DialogDescription>
           </DialogHeader>
 

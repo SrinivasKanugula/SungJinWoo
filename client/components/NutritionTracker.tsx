@@ -2,12 +2,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Droplet, Flame, Beef } from "lucide-react";
 
 interface NutritionTrackerProps {
@@ -64,10 +59,14 @@ export function NutritionTracker({
           <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
               <Flame className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />
-              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Calories</h3>
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">
+                Calories
+              </h3>
             </div>
           </div>
-          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">{calories}</div>
+          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">
+            {calories}
+          </div>
           <Button
             onClick={() => setOpenDialog("calories")}
             variant="outline"
@@ -82,10 +81,14 @@ export function NutritionTracker({
           <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
               <Beef className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
-              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Protein</h3>
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">
+                Protein
+              </h3>
             </div>
           </div>
-          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">{protein}g</div>
+          <div className="text-2xl sm:text-3xl font-bold text-purple-300 mb-3 sm:mb-4">
+            {protein}g
+          </div>
           <Button
             onClick={() => setOpenDialog("protein")}
             variant="outline"
@@ -100,7 +103,9 @@ export function NutritionTracker({
           <div className="flex items-center justify-between mb-3 sm:mb-4">
             <div className="flex items-center gap-2">
               <Droplet className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
-              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">Water</h3>
+              <h3 className="font-semibold text-purple-300 text-sm sm:text-base">
+                Water
+              </h3>
             </div>
             <span className="text-xs text-purple-300/60">
               {Math.round(waterPercentage)}%
@@ -126,7 +131,10 @@ export function NutritionTracker({
       </div>
 
       {/* Input Dialogs */}
-      <Dialog open={openDialog !== null} onOpenChange={() => setOpenDialog(null)}>
+      <Dialog
+        open={openDialog !== null}
+        onOpenChange={() => setOpenDialog(null)}
+      >
         <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-md">
           <DialogHeader>
             <DialogTitle className="text-center text-purple-300">
@@ -164,7 +172,9 @@ export function NutritionTracker({
               </Button>
               <Button
                 onClick={() =>
-                  handleNutritionUpdate(openDialog as "calories" | "protein" | "water")
+                  handleNutritionUpdate(
+                    openDialog as "calories" | "protein" | "water",
+                  )
                 }
                 disabled={!inputValue}
                 className="flex-1 bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40 h-10 text-sm"

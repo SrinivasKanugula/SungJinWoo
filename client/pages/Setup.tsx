@@ -7,7 +7,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { saveSetup } from "@/lib/storage";
 import { SetupData, WorkoutDay, Exercise } from "@shared/types";
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const days = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
 export default function Setup() {
   const navigate = useNavigate();
@@ -33,7 +40,12 @@ export default function Setup() {
   const [currentDayIndex, setCurrentDayIndex] = useState(0);
 
   const handleBasicInfo = () => {
-    if (setup.dailyWaterGoal && setup.initialWeight && setup.height && setup.countdownDays) {
+    if (
+      setup.dailyWaterGoal &&
+      setup.initialWeight &&
+      setup.height &&
+      setup.countdownDays
+    ) {
       setStep(2);
     }
   };
@@ -93,7 +105,9 @@ export default function Setup() {
             <div
               key={s}
               className={`h-2 flex-1 rounded-full transition-colors ${
-                s <= step ? "bg-gradient-to-r from-purple-500 to-magenta-500" : "bg-slate-700/50"
+                s <= step
+                  ? "bg-gradient-to-r from-purple-500 to-magenta-500"
+                  : "bg-slate-700/50"
               }`}
             />
           ))}
@@ -113,7 +127,9 @@ export default function Setup() {
             {step === 1 && (
               <div className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="water" className="text-purple-300">Daily Water Goal (ml)</Label>
+                  <Label htmlFor="water" className="text-purple-300">
+                    Daily Water Goal (ml)
+                  </Label>
                   <Input
                     id="water"
                     type="number"
@@ -129,7 +145,9 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="weight" className="text-purple-300">Current Weight (kg)</Label>
+                  <Label htmlFor="weight" className="text-purple-300">
+                    Current Weight (kg)
+                  </Label>
                   <Input
                     id="weight"
                     type="number"
@@ -146,7 +164,9 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="height" className="text-purple-300">Height (cm)</Label>
+                  <Label htmlFor="height" className="text-purple-300">
+                    Height (cm)
+                  </Label>
                   <Input
                     id="height"
                     type="number"
@@ -159,7 +179,9 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="countdown" className="text-purple-300">Countdown Days</Label>
+                  <Label htmlFor="countdown" className="text-purple-300">
+                    Countdown Days
+                  </Label>
                   <Input
                     id="countdown"
                     type="number"
@@ -194,7 +216,9 @@ export default function Setup() {
 
                 <div className="space-y-3">
                   <div className="space-y-2">
-                    <Label htmlFor="exercise" className="text-purple-300">Exercise Name</Label>
+                    <Label htmlFor="exercise" className="text-purple-300">
+                      Exercise Name
+                    </Label>
                     <Input
                       id="exercise"
                       value={currentExercise.name}
@@ -211,7 +235,9 @@ export default function Setup() {
 
                   <div className="grid grid-cols-2 gap-2 sm:gap-3">
                     <div className="space-y-2">
-                      <Label htmlFor="sets" className="text-purple-300">Sets</Label>
+                      <Label htmlFor="sets" className="text-purple-300">
+                        Sets
+                      </Label>
                       <Input
                         id="sets"
                         type="number"
@@ -227,7 +253,9 @@ export default function Setup() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="reps" className="text-purple-300">Reps</Label>
+                      <Label htmlFor="reps" className="text-purple-300">
+                        Reps
+                      </Label>
                       <Input
                         id="reps"
                         type="number"
@@ -261,7 +289,9 @@ export default function Setup() {
                         className="p-3 bg-muted/50 rounded-lg flex justify-between items-center"
                       >
                         <div>
-                          <p className="font-medium text-purple-300">{exercise.name}</p>
+                          <p className="font-medium text-purple-300">
+                            {exercise.name}
+                          </p>
                           <p className="text-sm text-purple-300/60">
                             {exercise.sets} sets × {exercise.reps} reps
                           </p>
@@ -273,7 +303,7 @@ export default function Setup() {
                           ×
                         </button>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
 
@@ -311,9 +341,14 @@ export default function Setup() {
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-purple-300">Workout Days</h4>
+                  <h4 className="font-semibold text-purple-300">
+                    Workout Days
+                  </h4>
                   {setup.workoutRoutine.map((day) => (
-                    <div key={day.day} className="p-3 glass-effect border-blue-500/30 rounded-lg hover:border-purple-300/50 transition-all">
+                    <div
+                      key={day.day}
+                      className="p-3 glass-effect border-blue-500/30 rounded-lg hover:border-purple-300/50 transition-all"
+                    >
                       <p className="font-medium text-purple-300">{day.day}</p>
                       <p className="text-sm text-purple-300/60">
                         {day.exercises.length} exercises

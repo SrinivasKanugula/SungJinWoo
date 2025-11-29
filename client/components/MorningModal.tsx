@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 const FITNESS_QUOTES = [
   "The only bad workout is the one that didn't happen.",
@@ -38,7 +33,7 @@ export function MorningModal({
   useEffect(() => {
     if (open) {
       setQuote(
-        FITNESS_QUOTES[Math.floor(Math.random() * FITNESS_QUOTES.length)]
+        FITNESS_QUOTES[Math.floor(Math.random() * FITNESS_QUOTES.length)],
       );
     }
   }, [open]);
@@ -65,12 +60,12 @@ export function MorningModal({
                 <div className="text-3xl sm:text-4xl font-bold text-purple-300">
                   {countdownDay}
                 </div>
-                <div className="text-xs text-purple-300/70">
-                  / {totalDays}
-                </div>
+                <div className="text-xs text-purple-300/70">/ {totalDays}</div>
               </div>
             </div>
-            <p className="text-xs sm:text-sm text-purple-300/60">Days of Transformation</p>
+            <p className="text-xs sm:text-sm text-purple-300/60">
+              Days of Transformation
+            </p>
           </div>
 
           {/* Start Button */}

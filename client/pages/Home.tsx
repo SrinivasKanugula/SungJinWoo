@@ -17,14 +17,19 @@ import {
 } from "@/lib/storage";
 import { Activity, Settings as SettingsIcon } from "lucide-react";
 
-type LoggingStage = "weight" | "exercises" | "workout" | "nutrition" | "complete";
+type LoggingStage =
+  | "weight"
+  | "exercises"
+  | "workout"
+  | "nutrition"
+  | "complete";
 
 export default function Home() {
   const navigate = useNavigate();
   const [user, setUser] = useState(getUser());
   const [todayData, setTodayData] = useState(getTodayData());
   const [currentStage, setCurrentStage] = useState<LoggingStage | "morning">(
-    "morning"
+    "morning",
   );
   const [showCompletionMessage, setShowCompletionMessage] = useState(false);
   const [showNutritionMessage, setShowNutritionMessage] = useState(false);
@@ -41,7 +46,9 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4 tech-grid">
         <div className="text-center space-y-6">
           <Activity className="w-16 h-16 text-purple-400 mx-auto animate-purple-glow" />
-          <h1 className="text-4xl font-bold glow-text-accent">Welcome to FitPulse</h1>
+          <h1 className="text-4xl font-bold glow-text-accent">
+            Welcome to FitPulse
+          </h1>
           <p className="text-purple-300/70 max-w-md">
             Your Solo Levelling-inspired fitness transformation journey starts
             here
@@ -109,7 +116,9 @@ export default function Home() {
       <div className="border-b border-purple-500/20 glass-effect sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
           <div className="min-w-0">
-            <h1 className="text-xl sm:text-2xl font-bold glow-text-accent truncate">FitPulse</h1>
+            <h1 className="text-xl sm:text-2xl font-bold glow-text-accent truncate">
+              FitPulse
+            </h1>
             <p className="text-xs text-purple-300/60">
               Day {todayData.countdownDay} / {user.setup.countdownDays}
             </p>
@@ -167,9 +176,7 @@ export default function Home() {
               <p className="text-2xl font-bold glow-text-accent">
                 Not enough... 💪
               </p>
-              <p className="text-purple-300/70">
-                Now focus on the nutrition
-              </p>
+              <p className="text-purple-300/70">Now focus on the nutrition</p>
             </div>
           </div>
         )}
@@ -250,7 +257,9 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-bold glow-text-accent">Continue Your Day</h3>
+              <h3 className="text-lg sm:text-xl font-bold glow-text-accent">
+                Continue Your Day
+              </h3>
               <Button
                 onClick={() => setCurrentStage("nutrition")}
                 className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 sm:h-12 font-semibold shadow-lg shadow-purple-500/40 text-sm sm:text-base"
