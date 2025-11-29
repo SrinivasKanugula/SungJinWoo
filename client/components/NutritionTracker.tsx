@@ -158,7 +158,7 @@ export function NutritionTracker({
               <Button
                 onClick={() => setOpenDialog(null)}
                 variant="outline"
-                className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200"
+                className="flex-1 border-purple-500/30 text-purple-300 hover:bg-purple-500/20 hover:text-purple-200 h-10 text-sm"
               >
                 Cancel
               </Button>
@@ -167,7 +167,7 @@ export function NutritionTracker({
                   handleNutritionUpdate(openDialog as "calories" | "protein" | "water")
                 }
                 disabled={!inputValue}
-                className="flex-1 bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40"
+                className="flex-1 bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40 h-10 text-sm"
               >
                 Add
               </Button>
