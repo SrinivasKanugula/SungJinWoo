@@ -176,7 +176,7 @@ export default function Setup() {
 
                 <Button
                   onClick={handleBasicInfo}
-                  className="w-full glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40"
+                  className="w-full glow-button bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white font-semibold shadow-lg shadow-purple-500/40 h-10 sm:h-12 text-sm sm:text-base"
                 >
                   Next
                 </Button>
