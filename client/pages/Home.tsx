@@ -222,38 +222,38 @@ export default function Home() {
         {/* Summary for logged day */}
         {hasLoggedToday && currentStage === "morning" && (
           <div className="space-y-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
-                <p className="text-purple-300/70 text-sm">Weight</p>
-                <p className="text-2xl font-bold text-purple-300">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4">
+              <div className="p-3 sm:p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
+                <p className="text-purple-300/70 text-xs sm:text-sm">Weight</p>
+                <p className="text-xl sm:text-2xl font-bold text-purple-300">
                   {todayData.weight}kg
                 </p>
               </div>
-              <div className="p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
-                <p className="text-purple-300/70 text-sm">Pushups</p>
-                <p className="text-2xl font-bold text-purple-300">
+              <div className="p-3 sm:p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
+                <p className="text-purple-300/70 text-xs sm:text-sm">Pushups</p>
+                <p className="text-xl sm:text-2xl font-bold text-purple-300">
                   {todayData.pushups || 0}
                 </p>
               </div>
-              <div className="p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
-                <p className="text-purple-300/70 text-sm">Situps</p>
-                <p className="text-2xl font-bold text-purple-300">
+              <div className="p-3 sm:p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
+                <p className="text-purple-300/70 text-xs sm:text-sm">Situps</p>
+                <p className="text-xl sm:text-2xl font-bold text-purple-300">
                   {todayData.situps || 0}
                 </p>
               </div>
-              <div className="p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
-                <p className="text-purple-300/70 text-sm">Water</p>
-                <p className="text-2xl font-bold text-purple-300">
+              <div className="p-3 sm:p-4 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/50 transition-all">
+                <p className="text-purple-300/70 text-xs sm:text-sm">Water</p>
+                <p className="text-xl sm:text-2xl font-bold text-purple-300">
                   {todayData.nutrition.water}ml
                 </p>
               </div>
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-xl font-bold glow-text-accent">Continue Your Day</h3>
+              <h3 className="text-lg sm:text-xl font-bold glow-text-accent">Continue Your Day</h3>
               <Button
                 onClick={() => setCurrentStage("nutrition")}
-                className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-12 font-semibold shadow-lg shadow-purple-500/40"
+                className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 sm:h-12 font-semibold shadow-lg shadow-purple-500/40 text-sm sm:text-base"
               >
                 Log Nutrition
               </Button>
