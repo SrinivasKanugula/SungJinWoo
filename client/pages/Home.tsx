@@ -15,7 +15,7 @@ import {
   checkAndPerformDailyReset,
   updateExerciseCompletion,
 } from "@/lib/storage";
-import { Activity } from "lucide-react";
+import { Activity, Settings as SettingsIcon } from "lucide-react";
 
 type LoggingStage = "weight" | "exercises" | "workout" | "nutrition" | "complete";
 
