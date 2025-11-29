@@ -83,29 +83,29 @@ export default {
         "glow-pulse": {
           "0%, 100%": {
             opacity: "1",
-            textShadow: "0 0 20px rgb(0 255 255 / 0.5)",
-            boxShadow: "0 0 20px rgb(0 255 255 / 0.3), inset 0 0 20px rgb(0 255 255 / 0.1)",
+            textShadow: "0 0 20px rgb(167 139 250 / 0.5)",
+            boxShadow: "0 0 20px rgb(167 139 250 / 0.3), inset 0 0 20px rgb(167 139 250 / 0.1)",
           },
           "50%": {
-            opacity: "0.8",
-            textShadow: "0 0 40px rgb(0 255 255 / 0.8)",
-            boxShadow: "0 0 40px rgb(0 255 255 / 0.5), inset 0 0 30px rgb(0 255 255 / 0.15)",
+            opacity: "0.9",
+            textShadow: "0 0 40px rgb(196 181 253 / 0.8)",
+            boxShadow: "0 0 40px rgb(167 139 250 / 0.5), inset 0 0 30px rgb(196 181 253 / 0.15)",
           },
         },
-        "cyan-glow": {
+        "purple-glow": {
           "0%, 100%": {
-            boxShadow: "0 0 10px rgb(0 255 255 / 0.3), inset 0 0 10px rgb(0 255 255 / 0.05)",
+            boxShadow: "0 0 10px rgb(167 139 250 / 0.3), inset 0 0 10px rgb(167 139 250 / 0.05)",
           },
           "50%": {
-            boxShadow: "0 0 25px rgb(0 255 255 / 0.5), inset 0 0 15px rgb(0 255 255 / 0.1)",
+            boxShadow: "0 0 25px rgb(167 139 250 / 0.5), inset 0 0 15px rgb(167 139 250 / 0.1)",
           },
         },
-        "blue-glow": {
+        "magenta-glow": {
           "0%, 100%": {
-            boxShadow: "0 0 10px rgb(0 150 255 / 0.3), inset 0 0 10px rgb(0 150 255 / 0.05)",
+            boxShadow: "0 0 10px rgb(217 70 239 / 0.3), inset 0 0 10px rgb(217 70 239 / 0.05)",
           },
           "50%": {
-            boxShadow: "0 0 25px rgb(0 150 255 / 0.5), inset 0 0 15px rgb(0 150 255 / 0.1)",
+            boxShadow: "0 0 25px rgb(217 70 239 / 0.5), inset 0 0 15px rgb(217 70 239 / 0.1)",
           },
         },
       },
