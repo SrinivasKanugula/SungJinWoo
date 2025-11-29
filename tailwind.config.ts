@@ -113,8 +113,8 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "glow-pulse": "glow-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "cyan-glow": "cyan-glow 3s ease-in-out infinite",
-        "blue-glow": "blue-glow 3s ease-in-out infinite",
+        "purple-glow": "purple-glow 3s ease-in-out infinite",
+        "magenta-glow": "magenta-glow 3s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-to-br-dark": "linear-gradient(135deg, #1a0f3f 0%, #2d1a5c 100%)",
