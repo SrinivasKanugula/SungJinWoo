@@ -57,39 +57,39 @@ export default function Analysis() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800">
       {/* Header */}
-      <div className="border-b border-cyan-500/20 bg-black/30 backdrop-blur-lg glass-effect sticky top-0 z-40">
+      <div className="border-b border-purple-500/20 bg-black/30 backdrop-blur-lg glass-effect sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Button
               onClick={() => navigate("/")}
               variant="ghost"
               size="icon"
-              className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-500/20 transition-all"
+              className="text-purple-300/70 hover:text-purple-300 hover:bg-purple-500/20 transition-all"
             >
               <ArrowLeft className="w-5 h-5" />
             </Button>
             <div>
               <h1 className="text-2xl font-bold glow-text-accent">Progress Analytics</h1>
-              <p className="text-xs text-cyan-300/60">
+              <p className="text-xs text-purple-300/60">
                 Track your transformation journey
               </p>
             </div>
           </div>
-          <BarChart3 className="w-6 h-6 text-cyan-400" />
+          <BarChart3 className="w-6 h-6 text-purple-300" />
         </div>
       </div>
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-8">
         {chartData.length === 0 ? (
-          <Card className="glass-effect border-cyan-500/40 bg-black/30">
+          <Card className="glass-effect border-purple-500/40 bg-black/30">
             <CardContent className="pt-10 text-center py-12">
-              <p className="text-cyan-300/70 text-lg">
+              <p className="text-purple-300/70 text-lg">
                 No data yet. Start logging your daily progress to see charts!
               </p>
               <Button
                 onClick={() => navigate("/")}
-                className="mt-4 glow-button bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 font-semibold shadow-lg shadow-cyan-500/40"
+                className="mt-4 glow-button bg-gradient-to-r from-purple-500 to-purple-300 hover:from-purple-300 hover:to-purple-300 text-slate-950 font-semibold shadow-lg shadow-purple-500/40"
               >
                 Start Logging
               </Button>
@@ -98,9 +98,9 @@ export default function Analysis() {
         ) : (
           <div className="space-y-8">
             {/* Weight Chart */}
-            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+            <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-cyan-400">Weight Progress</CardTitle>
+                <CardTitle className="text-purple-300">Weight Progress</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -134,9 +134,9 @@ export default function Analysis() {
             </Card>
 
             {/* Pushups & Situps Chart */}
-            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+            <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-cyan-400">Workout Progress</CardTitle>
+                <CardTitle className="text-purple-300">Workout Progress</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -177,9 +177,9 @@ export default function Analysis() {
             </Card>
 
             {/* Nutrition Chart - Calories */}
-            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+            <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-cyan-400">Daily Calorie Intake</CardTitle>
+                <CardTitle className="text-purple-300">Daily Calorie Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -213,9 +213,9 @@ export default function Analysis() {
             </Card>
 
             {/* Protein Chart */}
-            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+            <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-cyan-400">Daily Protein Intake</CardTitle>
+                <CardTitle className="text-purple-300">Daily Protein Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
@@ -249,9 +249,9 @@ export default function Analysis() {
             </Card>
 
             {/* Water Intake Chart */}
-            <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+            <Card className="glass-effect border-purple-500/40 bg-black/30 backdrop-blur-xl">
               <CardHeader>
-                <CardTitle className="text-cyan-400">Daily Water Intake</CardTitle>
+                <CardTitle className="text-purple-300">Daily Water Intake</CardTitle>
               </CardHeader>
               <CardContent>
                 <ResponsiveContainer width="100%" height={300}>
