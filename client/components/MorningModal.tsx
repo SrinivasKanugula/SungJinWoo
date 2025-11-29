@@ -45,24 +45,24 @@ export function MorningModal({
 
   return (
     <Dialog open={open}>
-      <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-lg">
+      <DialogContent className="glass-effect glow-primary border-purple-500/40 bg-black/40 backdrop-blur-xl max-w-lg w-full mx-4">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl"></DialogTitle>
+          <DialogTitle className="text-center text-lg sm:text-2xl"></DialogTitle>
         </DialogHeader>
 
-        <div className="space-y-8 py-6 text-center">
+        <div className="space-y-6 sm:space-y-8 py-4 sm:py-6 text-center">
           {/* Quote */}
           <div className="space-y-4">
-            <p className="text-lg italic glow-text-accent leading-relaxed">
+            <p className="text-sm sm:text-lg italic glow-text-accent leading-relaxed">
               "{quote}"
             </p>
           </div>
 
           {/* Countdown */}
           <div className="space-y-2">
-            <div className="inline-flex items-center justify-center w-24 h-24 rounded-full border-4 border-purple-400/50 glow-primary animate-purple-glow">
+            <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-400/50 glow-primary animate-purple-glow">
               <div className="text-center">
-                <div className="text-4xl font-bold text-purple-300">
+                <div className="text-3xl sm:text-4xl font-bold text-purple-300">
                   {countdownDay}
                 </div>
                 <div className="text-xs text-purple-300/70">
@@ -70,13 +70,13 @@ export function MorningModal({
                 </div>
               </div>
             </div>
-            <p className="text-sm text-purple-300/60">Days of Transformation</p>
+            <p className="text-xs sm:text-sm text-purple-300/60">Days of Transformation</p>
           </div>
 
           {/* Start Button */}
           <Button
             onClick={onStart}
-            className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-12 text-lg font-semibold rounded-lg shadow-lg shadow-purple-500/40 hover:shadow-magenta-400/60 transition-all duration-300"
+            className="glow-button w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 sm:h-12 text-sm sm:text-lg font-semibold rounded-lg shadow-lg shadow-purple-500/40 hover:shadow-magenta-400/60 transition-all duration-300"
           >
             Let's Start
           </Button>
