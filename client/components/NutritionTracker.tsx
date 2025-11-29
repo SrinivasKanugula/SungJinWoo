@@ -53,12 +53,12 @@ export function NutritionTracker({
   const waterPercentage = Math.min((water / dailyWaterGoal) * 100, 100);
 
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-bold glow-text-accent mb-6">
+    <div className="space-y-4 sm:space-y-6">
+      <h2 className="text-xl sm:text-2xl font-bold glow-text-accent mb-4 sm:mb-6">
         Nutrition Tracking
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {/* Calories Card */}
         <div className="p-6 glass-effect border-purple-500/30 rounded-lg glow-primary hover:border-purple-400/60 transition-all">
           <div className="flex items-center justify-between mb-4">
