@@ -85,7 +85,7 @@ export default function Setup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-background via-slate-900 to-slate-800 flex items-center justify-center p-4 tech-grid">
       <div className="w-full max-w-2xl">
         {/* Progress indicator */}
         <div className="mb-8 flex gap-2">
@@ -93,13 +93,13 @@ export default function Setup() {
             <div
               key={s}
               className={`h-2 flex-1 rounded-full transition-colors ${
-                s <= step ? "bg-gradient-to-r from-cyan-500 to-cyan-400" : "bg-slate-700/50"
+                s <= step ? "bg-gradient-to-r from-purple-500 to-magenta-500" : "bg-slate-700/50"
               }`}
             />
           ))}
         </div>
 
-        <Card className="glass-effect border-cyan-500/40 bg-black/30 backdrop-blur-xl">
+        <Card className="glass-effect glow-primary border-purple-500/40 bg-black/30 backdrop-blur-xl">
           <CardHeader>
             <CardTitle className="text-2xl glow-text-accent">
               {step === 1
