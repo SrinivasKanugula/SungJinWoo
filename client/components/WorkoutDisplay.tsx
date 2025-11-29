@@ -42,7 +42,7 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
         <h2 className="text-3xl font-bold glow-text-accent mb-2">
           {workout.day}'s Workout
         </h2>
-        <p className="text-cyan-300/70">
+        <p className="text-purple-300/70">
           {workout.exercises.length} exercises to complete
         </p>
       </div>
@@ -56,14 +56,14 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
               key={exercise.id}
               className={`p-4 rounded-lg border-2 transition-all glass-effect ${
                 isCompleted
-                  ? "border-cyan-400/50 glow-accent bg-cyan-500/10"
-                  : "border-blue-500/30 hover:border-cyan-400/50 hover:glow-accent"
+                  ? "border-purple-400/50 glow-primary bg-purple-500/10"
+                  : "border-purple-500/30 hover:border-purple-400/50 hover:glow-primary"
               }`}
             >
               <div className="flex items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg text-cyan-300">{exercise.name}</h3>
-                  <p className="text-sm text-cyan-300/60">
+                  <h3 className="font-semibold text-lg text-purple-300">{exercise.name}</h3>
+                  <p className="text-sm text-purple-300/60">
                     {exercise.sets} sets × {exercise.reps} reps
                   </p>
                 </div>
@@ -73,8 +73,8 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
                   disabled={isCompleted}
                   className={`ml-4 ${
                     isCompleted
-                      ? "bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 shadow-lg shadow-cyan-500/40"
-                      : "bg-gradient-to-r from-blue-500 to-blue-400 hover:from-blue-400 hover:to-blue-300 text-slate-950 shadow-lg shadow-blue-500/40"
+                      ? "bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white shadow-lg shadow-purple-500/40"
+                      : "bg-gradient-to-r from-magenta-600 to-purple-500 hover:from-magenta-500 hover:to-purple-400 text-white shadow-lg shadow-magenta-500/40"
                   }`}
                 >
                   {isCompleted ? (
@@ -93,8 +93,8 @@ export function WorkoutDisplay({ workout, onWorkoutComplete }: WorkoutDisplayPro
       </div>
 
       {allCompleted && (
-        <div className="p-4 glass-effect glow-accent border-cyan-400/50 rounded-lg text-center">
-          <p className="text-cyan-400 font-semibold">
+        <div className="p-4 glass-effect glow-primary border-purple-400/50 rounded-lg text-center">
+          <p className="text-purple-300 font-semibold">
             ✓ All exercises completed!
           </p>
         </div>
