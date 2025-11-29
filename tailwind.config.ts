@@ -117,9 +117,10 @@ export default {
         "blue-glow": "blue-glow 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-to-br-dark": "linear-gradient(135deg, #0a1628 0%, #0f1f3f 100%)",
-        "gradient-cool": "linear-gradient(135deg, #00d4ff 0%, #0096ff 100%)",
-        "gradient-cyan": "linear-gradient(135deg, #00ffff 0%, #00a8ff 50%, #6366f1 100%)",
+        "gradient-to-br-dark": "linear-gradient(135deg, #1a0f3f 0%, #2d1a5c 100%)",
+        "gradient-purple": "linear-gradient(135deg, #a78bfa 0%, #c084fc 100%)",
+        "gradient-tech": "linear-gradient(135deg, #9333ea 0%, #d946ef 50%, #a78bfa 100%)",
+        "gradient-vibrant": "linear-gradient(135deg, #7e22ce 0%, #9333ea 50%, #d946ef 100%)",
       },
     },
   },
