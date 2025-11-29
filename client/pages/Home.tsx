@@ -162,11 +162,11 @@ export default function Home() {
         {/* Completion Message */}
         {showCompletionMessage && (
           <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 backdrop-blur-sm">
-            <div className="glass-effect border-cyan-500/40 rounded-xl p-8 text-center space-y-4 max-w-md glow-accent">
+            <div className="glass-effect glow-primary border-purple-500/40 rounded-xl p-8 text-center space-y-4 max-w-md">
               <p className="text-2xl font-bold glow-text-accent">
                 Not enough... 💪
               </p>
-              <p className="text-cyan-300/70">
+              <p className="text-purple-300/70">
                 Now focus on the nutrition
               </p>
             </div>
@@ -176,16 +176,16 @@ export default function Home() {
         {/* Nutrition Message */}
         {showNutritionMessage && (
           <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 backdrop-blur-sm">
-            <div className="glass-effect border-cyan-500/40 rounded-xl p-8 text-center space-y-6 max-w-md glow-accent">
+            <div className="glass-effect glow-primary border-purple-500/40 rounded-xl p-8 text-center space-y-6 max-w-md">
               <p className="text-2xl font-bold glow-text-accent">
                 Complete Your Day 🎯
               </p>
-              <p className="text-cyan-300/70">
+              <p className="text-purple-300/70">
                 Log your nutrition to finish strong
               </p>
               <Button
                 onClick={handleNutritionMessageClose}
-                className="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 hover:from-cyan-400 hover:to-cyan-300 text-slate-950 h-10 font-semibold shadow-lg shadow-cyan-500/40"
+                className="w-full bg-gradient-to-r from-purple-600 to-magenta-500 hover:from-purple-500 hover:to-magenta-400 text-white h-10 font-semibold shadow-lg shadow-purple-500/40"
               >
                 Continue to Nutrition
               </Button>
